@@ -38,10 +38,6 @@ Deploy the Domain Controller VM
 
 Create a Virtual Machine using Windows Server 2022 and name it "DC-1".
 
--Username: labuser
-
-Password: Cyberlab123!
-
 ![Screenshot 2025-01-16 060741](https://github.com/user-attachments/assets/6e24c5c8-3e17-40a7-b6e9-378a4c5a4732)
 ![Screenshot 2025-01-16 061258](https://github.com/user-attachments/assets/abb23de1-a7f3-4228-b846-6c5fdfc275be)
 ![Screenshot 2025-01-16 061408](https://github.com/user-attachments/assets/eed0ddba-be41-426b-a266-108478558320)
@@ -59,5 +55,24 @@ Disable Windows Firewall (Testing Purposes)
 
 Log in to the VM and temporarily disable the Windows Firewall to test connectivity during setup.
 This process establishes the foundation for a domain controller within a virtualized environment.
+
+
+Setup Client-1 in Azure
+
+Create the Client VM (Windows 10) named “Client-1”
+
+![Screenshot 2025-01-16 064727](https://github.com/user-attachments/assets/20a678fc-9087-4d7a-8099-b6be66825b0d)
+![Screenshot 2025-01-16 064928](https://github.com/user-attachments/assets/2e8de1d0-e26d-4fc9-963c-757667211cd1)
+![Screenshot 2025-01-16 065037](https://github.com/user-attachments/assets/3468f51f-afb4-4c8b-9cfb-bf33d0bf3964)
+
+
+
+
+
+
+
+
+
+
 
 <h2>Deployment and Configuration Steps</h2>
