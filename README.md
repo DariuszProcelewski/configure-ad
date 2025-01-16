@@ -44,14 +44,12 @@ Create a Virtual Machine using Windows Server 2022 and name it "DC-1".
 ![image](https://github.com/user-attachments/assets/957fea81-cc2b-4916-832f-a7129efed024)
 ![Screenshot 2025-01-16 061921](https://github.com/user-attachments/assets/31d9841e-74bf-4116-9b1e-1f42c9bf9e02)
 
-
-
-
-
-Set a Static Private IP for the Domain Controller
-
-Once the VM is created, configure the NIC (Network Interface Card) to use a static private IP address for consistent network connectivity.
+Set a Static Private IP for the Domain Controller. Once the VM is created, configure the NIC (Network Interface Card) to use a static private IP address for consistent network connectivity.
 Disable Windows Firewall (Testing Purposes)
+![Screenshot 2025-01-16 065711](https://github.com/user-attachments/assets/046d9b9f-9887-4eec-9e70-0cbde65ce9a8)
+![Screenshot 2025-01-16 065934](https://github.com/user-attachments/assets/968b3f8a-289d-4228-8558-d72f37806700)
+![Screenshot 2025-01-16 070059](https://github.com/user-attachments/assets/3fc5b36e-0a33-4716-bedf-5c356752d9cc)
+
 
 Log in to the VM and temporarily disable the Windows Firewall to test connectivity during setup.
 This process establishes the foundation for a domain controller within a virtualized environment.
