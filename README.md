@@ -82,6 +82,33 @@ Copy dc-1 privet adress
 ![Screenshot 2025-01-17 054542](https://github.com/user-attachments/assets/4eb8ffbc-7ccd-4198-b7a2-198facc08921)
 ![Screenshot 2025-01-17 054835](https://github.com/user-attachments/assets/cb2924ba-97ef-4c3f-a095-224fd1f8a5fc)
 
+From the Azure Portal, restart Client-1
+![Screenshot 2025-01-17 061008](https://github.com/user-attachments/assets/0b0ac706-140d-4990-b281-ed3cd1f1112e)
+
+
+1. Log in to **Client-1**.
+   
+![Screenshot 2025-01-17 061206](https://github.com/user-attachments/assets/4d6afd85-4994-456b-a890-68cb7bbfc915)
+![image](https://github.com/user-attachments/assets/119cc862-2e21-4685-8f3d-56e8e9ffbf1d)
+![image](https://github.com/user-attachments/assets/9a3dae41-85da-4597-bc5b-b4ea6e36524b)
+
+3. Test connectivity to **DC-1** by pinging its private IP address.
+   
+5. Confirm that the ping is successful.
+   
+   ![Screenshot 2025-01-17 062007](https://github.com/user-attachments/assets/e823d4c6-6218-491e-a940-d1ce1e2f0bc3)
+   
+6. On **Client-1**, open PowerShell and execute `ipconfig /all`.  
+7. Verify that the DNS settings in the output display **DC-1**’s private IP address.
+   
+
+
+
+
+
+
+
+
 *IF YOU HAVE FAILED TO SAVE NETWORK INTERFACE FOLLOW STEPS TO FIX IT*
 ![image](https://github.com/user-attachments/assets/a9bf2e83-ac88-469d-8988-ea1df86ce4ac)
 
@@ -90,30 +117,25 @@ Copy dc-1 privet adress
 
 To do this, I did the following:
 
-#1 - Search for "Network security groups" in Azure and click into "Network security groups" when it comes up. Not the classic version.
+#1 Search for "Network security groups" in Azure and click into "Network security groups" when it comes up. Not the classic version.
 
-#2 - Click into "client-1-nsg" (or whatever you have it named) and do the following steps:
+#2 Click into "client-1-nsg" (or whatever you have it named) and do the following steps:
 
-- - Click the "Settings" dropdown menu
+- Click the "Settings" dropdown menu
 
-- - Click "Inbound security rules"
+- Click "Inbound security rules"
 
-- - Click "Add"
+- Click "Add"
 
-- - Leave everything alone except in the "Destination port ranges" field; change the number to 53 and in the "Priority" field change it to 290
+- Leave everything alone except in the "Destination port ranges" field; change the number to 53 and in the "Priority" field change it to 290
 
--- Click the "Save" button
+- Click the "Save" button
 
--- Then click "Outbound security rules" and complete the same process again
+- Then click "Outbound security rules" and complete the same process again
 
-#3 - Then click into "dc-1-nsg" and do the same process again.
+#3  Then click into "dc-1-nsg" and do the same process again.
 
-#4 - Go to "Virtual machines"
+#4  Go to "Virtual machines"
 
-#5 - Click the checkbox next to "client-1" and "dc-1" and click "Restart" in the top bar
+#5  Click the checkbox next to "client-1" and "dc-1" and click "Restart" in the top bar
 
-
-
-
-
-<h2>Deployment and Configuration Steps</h2>
