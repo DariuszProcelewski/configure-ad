@@ -44,7 +44,7 @@ Deploy the Domain Controller VM
 ![image](https://github.com/user-attachments/assets/957fea81-cc2b-4916-832f-a7129efed024)
 ![Screenshot 2025-01-16 061921](https://github.com/user-attachments/assets/31d9841e-74bf-4116-9b1e-1f42c9bf9e02)
 
-Set a Static Private IP for the Domain Controller. Once the VM is created, configure the NIC (Network Interface Card) to use a static private IP address for consistent network connectivity.
+3) Set a Static Private IP for the Domain Controller. Once the VM is created, configure the NIC (Network Interface Card) to use a static private IP address for consistent network connectivity.
 Disable Windows Firewall (Testing Purposes)
 
 ![Screenshot 2025-01-16 065711](https://github.com/user-attachments/assets/046d9b9f-9887-4eec-9e70-0cbde65ce9a8)
@@ -52,7 +52,7 @@ Disable Windows Firewall (Testing Purposes)
 ![Screenshot 2025-01-16 070059](https://github.com/user-attachments/assets/3fc5b36e-0a33-4716-bedf-5c356752d9cc)
 
 
-Log in to the VM (dc-1) and temporarily disable the Windows Firewall to test connectivity during setup.
+4) Log in to the VM (dc-1) and temporarily disable the Windows Firewall to test connectivity during setup.
 
 ![image](https://github.com/user-attachments/assets/b6c4e46c-7120-4c31-8278-f7f8f5d93f37)
 
@@ -66,7 +66,7 @@ Run "wf.msc" and disable Firewall.
 ![Screenshot 2025-01-17 053931](https://github.com/user-attachments/assets/3d1c5459-0a75-451a-a35d-651c5d14328e)
 ![image](https://github.com/user-attachments/assets/c9d09076-2022-4a33-a47c-185520538156)
 
-3) Setup Client-1 in Azure
+5) Setup Client-1 in Azure
 
 Create the Client VM (Windows 10) named “Client-1”
 
@@ -74,39 +74,42 @@ Create the Client VM (Windows 10) named “Client-1”
 ![Screenshot 2025-01-16 064928](https://github.com/user-attachments/assets/2e8de1d0-e26d-4fc9-963c-757667211cd1)
 ![Screenshot 2025-01-16 065037](https://github.com/user-attachments/assets/3468f51f-afb4-4c8b-9cfb-bf33d0bf3964)
 
-After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+6) After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
 
-Copy dc-1 privet adress
+Copy dc-1 private adress (IF YOU HAVE ISSUE WITH SAVING NETWORK INTERFACE SCROLL TO THE BOTTOM FOR SOLUTION)
 
 ![Screenshot 2025-01-17 054416](https://github.com/user-attachments/assets/31e9783c-e34e-490a-aaa5-46af4d37f5fd)
 ![Screenshot 2025-01-17 054542](https://github.com/user-attachments/assets/4eb8ffbc-7ccd-4198-b7a2-198facc08921)
 ![Screenshot 2025-01-17 054835](https://github.com/user-attachments/assets/cb2924ba-97ef-4c3f-a095-224fd1f8a5fc)
 
 From the Azure Portal, restart Client-1
+
 ![Screenshot 2025-01-17 061008](https://github.com/user-attachments/assets/0b0ac706-140d-4990-b281-ed3cd1f1112e)
 
 
-1. Log in to **Client-1**.
+- Log in to **Client-1**.
    
 ![Screenshot 2025-01-17 061206](https://github.com/user-attachments/assets/4d6afd85-4994-456b-a890-68cb7bbfc915)
 ![image](https://github.com/user-attachments/assets/119cc862-2e21-4685-8f3d-56e8e9ffbf1d)
 ![image](https://github.com/user-attachments/assets/9a3dae41-85da-4597-bc5b-b4ea6e36524b)
 
-3. Test connectivity to **DC-1** by pinging its private IP address.
+- Test connectivity to **DC-1** by pinging its private IP address.
    
-5. Confirm that the ping is successful.
+- Confirm that the ping is successful.
    
    ![Screenshot 2025-01-17 062007](https://github.com/user-attachments/assets/e823d4c6-6218-491e-a940-d1ce1e2f0bc3)
    
-6. On **Client-1**, open PowerShell and execute `ipconfig /all`.  
-7. Verify that the DNS settings in the output display **DC-1**’s private IP address.
-   
+- On **Client-1**, open PowerShell and execute `ipconfig /all`.  
+- Verify that the DNS settings in the output display **DC-1**’s private IP address.
+  
+   ![Screenshot 2025-01-17 062617](https://github.com/user-attachments/assets/e393832d-dcfc-4e89-84f0-8cc23bb98e78)
 
 
 
 
 
 
+_____________________________________________________________________________________________________________________________________________________________________________
 
 
 *IF YOU HAVE FAILED TO SAVE NETWORK INTERFACE FOLLOW STEPS TO FIX IT*
