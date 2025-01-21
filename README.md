@@ -63,4 +63,34 @@ Add the Active Directory Domain Services role to the server.
 ![image](https://github.com/user-attachments/assets/1b2d58e3-118a-4de2-b62c-e5a35d268916)
 ![Screenshot 2025-01-21 062447](https://github.com/user-attachments/assets/79750a77-24c6-4135-9cbb-94119ac9e229)
 
+<h2>Create a Domain Admin User</h2>
+1. Access Active Directory Users and Computers (ADUC)
+
+- Open ADUC on DC-1.
+  
+2. Create Organizational Units (OUs)
+
+- Create an OU named _EMPLOYEES.
+  
+- Create another OU named _ADMINS.
+  
+3. Add a New Employee
+
+- Create a user named Jane Doe in the _ADMINS OU with the following credentials:
+  
+ - Username: jane_admin
+   
+ - Password: Cyberlab123!
+
+4. Assign Administrative Permissions
+
+- Add jane_admin to the Domain Admins security group.
+
+5. Switch to the New Admin Account
+
+- Log out of DC-1 and reconnect using the account: mydomain.com\jane_admin.
+
+6. Use jane_admin Moving Forward
+
+- Use the jane_admin account as the primary administrator for future tasks.
   
