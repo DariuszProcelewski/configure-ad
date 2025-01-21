@@ -27,9 +27,7 @@ If you need help creating your virtual machines and  Active Directory Infrastruc
 
 <h2>Part 1: Installing Active Directory</h2>
 
-1. Log in to DC-1
-
-- Access the DC-1 virtual machine using Remote Desktop Protocol (RDP).
+1. Log in to DC-1. Access the DC-1 virtual machine using Remote Desktop Protocol (RDP).
 
 2. Install Active Directory Domain Services (AD DS)
 
@@ -42,11 +40,27 @@ Add the Active Directory Domain Services role to the server.
 ![Screenshot 2025-01-21 060200](https://github.com/user-attachments/assets/10fce2c6-3c68-49a2-ae82-8acdcaad245a)
 
 
-Promote DC-1 to a Domain Controller
+3. Promote DC-1 to a Domain Controller
 
-Set up a new forest with the domain name of your choice (e.g., mydomain.com).
-Make a note of the domain name for future use.
-Restart and Log Back In
+![Screenshot 2025-01-21 060737](https://github.com/user-attachments/assets/bba23e09-522f-48b0-9c4c-b40ad1eb2754)
 
-Restart DC-1 after promotion.
-Log back in using the domain account: mydomain.com\labuser.
+- Set up a new forest with the domain name of your choice (e.g., mydomain.com).
+  
+- Make a note of the domain name for future use.
+
+![Screenshot 2025-01-21 061021](https://github.com/user-attachments/assets/5df78d3f-f5dd-44fa-9799-cc9b041e71c3)
+![image](https://github.com/user-attachments/assets/eac46e35-df3d-45a3-acca-13e641e27227)
+![Screenshot 2025-01-21 061306](https://github.com/user-attachments/assets/28505971-776d-4dbb-82eb-448f04b4f648)
+![Screenshot 2025-01-21 061531](https://github.com/user-attachments/assets/c44ef408-113e-417d-ba01-5e9c78e7c041)
+![Screenshot 2025-01-21 061703](https://github.com/user-attachments/assets/ee786c49-473a-4f40-9812-d8e5709e959d)
+
+4. Machine will restart your VM automaticly. Log Back In
+
+- Restart DC-1 after promotion.
+
+- Log back in using the domain account: mydomain.com\labuser.
+  
+![image](https://github.com/user-attachments/assets/1b2d58e3-118a-4de2-b62c-e5a35d268916)
+![Screenshot 2025-01-21 062447](https://github.com/user-attachments/assets/79750a77-24c6-4135-9cbb-94119ac9e229)
+
+  
