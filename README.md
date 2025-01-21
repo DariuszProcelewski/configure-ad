@@ -68,11 +68,22 @@ Add the Active Directory Domain Services role to the server.
 
 - Open ADUC on DC-1.
   
+![Screenshot 2025-01-21 063516](https://github.com/user-attachments/assets/22242a69-adbd-423c-b590-82097beb7201)
+
+  
 2. Create Organizational Units (OUs)
+   
+![Screenshot 2025-01-21 063729](https://github.com/user-attachments/assets/06bb652d-94a0-40c6-9dd2-5fcc9b5a7d2c)
 
 - Create an OU named _EMPLOYEES.
   
+  ![image](https://github.com/user-attachments/assets/9fd2370c-bc6f-41ce-aecf-6f9e4519535a)
+
+  
 - Create another OU named _ADMINS.
+  
+![image](https://github.com/user-attachments/assets/cb10b75b-2872-40cf-b2c9-c9bc36736d6e)
+
   
 3. Add a New Employee
 
@@ -81,14 +92,27 @@ Add the Active Directory Domain Services role to the server.
  - Username: jane_admin
    
  - Password: Cyberlab123!
+   
+![image](https://github.com/user-attachments/assets/30d7dae2-da91-4dcf-80ad-58cfa78a0dda)
+
+![image](https://github.com/user-attachments/assets/b7cf0999-fbe4-4067-8aff-90391a786d0d)
+
+![image](https://github.com/user-attachments/assets/d3c4833a-8d8e-4bff-9d6a-9442c76d7211)
 
 4. Assign Administrative Permissions
 
 - Add jane_admin to the Domain Admins security group.
 
+![image](https://github.com/user-attachments/assets/e980c355-fdf3-4a2e-b667-7f5b8ab4465d)
+
+![Screenshot 2025-01-21 064608](https://github.com/user-attachments/assets/b4bf0d54-fcf2-48ea-b857-32e846ff1b61)
+
+
 5. Switch to the New Admin Account
 
 - Log out of DC-1 and reconnect using the account: mydomain.com\jane_admin.
+  
+![image](https://github.com/user-attachments/assets/1cc60582-9072-41d7-b766-d4f39a2a3e7d)
 
 6. Use jane_admin Moving Forward
 
