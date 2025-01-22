@@ -186,3 +186,45 @@ Add the Active Directory Domain Services role to the server.
 
 Note: In a production environment, this configuration is typically managed via Group Policy for multiple systems simultaneously.
 
+
+ 
+
+<h2>Creating Additional Users and Testing Logins</h2>
+
+1. Log in to DC-1
+ 
+- Use the domain admin account: mydomain.com\jane_admin.  
+
+2. Run the User Creation Script
+   
+- Open PowerShell ISE as an administrator.
+   
+- Create a new file and paste the provided script into it. You can download/copy script [here](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+
+- Execute the script and monitor the creation of user accounts.  
+
+![image](https://github.com/user-attachments/assets/5f061921-4a6b-4fbd-b197-1a00eb9afdc0)
+
+![Screenshot 2025-01-22 071711](https://github.com/user-attachments/assets/1dee2935-9d7e-4421-b30e-9b3c9ed8aace)
+
+![image](https://github.com/user-attachments/assets/f40e22fc-093f-4eff-960b-e81319ade297)
+
+![Screenshot 2025-01-22 072246](https://github.com/user-attachments/assets/05b685c7-7772-434d-9496-a59e4e2f4f1c)
+
+3. Verify Account Creation
+   
+- Open **Active Directory Users and Computers (ADUC).
+     
+- Confirm the new accounts appear in the _EMPLOYEES Organizational Unit (OU).  
+
+
+
+4. Test User Login on Client-1
+     
+- Attempt to log in to **Client-1** using one of the newly created user accounts.
+     
+- Use the password specified in the script for the login.  
+
+
+
+
