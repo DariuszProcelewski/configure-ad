@@ -213,18 +213,18 @@ Note: In a production environment, this configuration is typically managed via G
 
 3. Verify Account Creation
    
-- Open **Active Directory Users and Computers (ADUC).
+- Open Active Directory Users and Computers (ADUC).
      
 - Confirm the new accounts appear in the _EMPLOYEES Organizational Unit (OU).  
 
+![image](https://github.com/user-attachments/assets/85a38b8c-3dd1-4de9-8a68-f8d691678683)
 
 
 4. Test User Login on Client-1
      
-- Attempt to log in to **Client-1** using one of the newly created user accounts.
-     
-- Use the password specified in the script for the login.  
+Attempt to log in to Client-1 using one of the newly created user accounts. (Use the password specified in the script for the login)  
 
 
 
+![Screenshot 2025-01-22 072800](https://github.com/user-attachments/assets/037da682-4120-4d7b-8af5-e07c1194404d)
 
