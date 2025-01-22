@@ -117,4 +117,45 @@ Add the Active Directory Domain Services role to the server.
 6. Use jane_admin Moving Forward
 
 - Use the jane_admin account as the primary administrator for future tasks.
+
+<h2>Joining Client-1 to the Domain</h2>
+
+1. Log In to Client-1
+
+2. Join Client-1 to the Domain
+
+3. Add Client-1 to the domain (this will trigger a restart).
+   
+![Screenshot 2025-01-22 063318](https://github.com/user-attachments/assets/c6acc1af-d04d-4917-a6d5-3ad07f7fcbc8)
+
+![Screenshot 2025-01-22 063747](https://github.com/user-attachments/assets/c8e2c51d-508f-4d4c-9e55-54e55963722a)
+
+![image](https://github.com/user-attachments/assets/94922281-d439-46df-b9ee-8cfdc9a5d0b8)
+
+![image](https://github.com/user-attachments/assets/1874120c-7d7b-4fb7-9490-37f9685e4304)
+
+![image](https://github.com/user-attachments/assets/531dcccc-4f2d-4531-8b0a-1345a5781b6d)
+
+4. Verify Domain Membership
+
+5. Log in to the Domain Controller and open Active Directory Users and Computers (ADUC).
+   
+![Screenshot 2025-01-22 064418](https://github.com/user-attachments/assets/d7cbde26-f8ad-42db-83a8-1a785f2c8419)
+   
+6. Confirm that Client-1 appears in the default Computers container.
+   
+![image](https://github.com/user-attachments/assets/a1b96c39-bcb8-46af-bf39-5911954cb2e4)
+   
+7. Organize Client-1 in Active Directory
+
+- Create a new Organizational Unit (OU) named _CLIENTS.
+
+- Move Client-1 into the _CLIENTS OU.
+  
+![image](https://github.com/user-attachments/assets/eaae2e62-5d29-4b55-bbd8-f23fb3c3de4d)
+
+![image](https://github.com/user-attachments/assets/cc6b820b-1ad1-40ec-b25e-6b59158a8073)
+
+![image](https://github.com/user-attachments/assets/2269fd3a-389f-475d-8548-13c3d977995f)
+
   
