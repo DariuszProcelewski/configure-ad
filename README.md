@@ -191,7 +191,7 @@ Note: In a production environment, this configuration is typically managed via G
 
 <h2>Creating Additional Users and Testing Logins</h2>
 
-1. Log in to DC-1
+1. Log in to dc-1
  
 - Use the domain admin account: mydomain.com\jane_admin.  
 
@@ -224,7 +224,13 @@ Note: In a production environment, this configuration is typically managed via G
      
 Attempt to log in to Client-1 using one of the newly created user accounts. (Use the password specified in the script for the login)  
 
-
-
 ![Screenshot 2025-01-22 072800](https://github.com/user-attachments/assets/037da682-4120-4d7b-8af5-e07c1194404d)
 
+![image](https://github.com/user-attachments/assets/4ac0ff98-20b1-4a3b-b454-de0b8c3e8047)
+
+![image](https://github.com/user-attachments/assets/2f99fa7d-3f63-406c-87eb-2a9f0c4f9e08)
+
+![image](https://github.com/user-attachments/assets/0cb38235-375e-4a80-9cb8-af7b7a58a068)
+
+
+Congratulations! You have successfully implemented an on-premises Active Directory and created user accounts within an Azure virtual environment!
