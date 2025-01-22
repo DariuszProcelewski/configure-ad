@@ -158,4 +158,31 @@ Add the Active Directory Domain Services role to the server.
 
 ![image](https://github.com/user-attachments/assets/2269fd3a-389f-475d-8548-13c3d977995f)
 
+ 
+ <h2>Part 2: Setting Up Remote Desktop for Non-Administrative Users on Client-1</h2>
+
+1. Log in to Client-1
+
+- Use the domain admin account: mydomain.com\jane_admin.
+
+2. Enable Remote Desktop Access for Domain Users
+
+- Open System Properties and navigate to the Remote Desktop tab.
   
+- Allow access to Remote Desktop for Domain Users.
+
+![image](https://github.com/user-attachments/assets/03ed532b-ba5b-459c-bac9-72b75ccd982f)
+
+![Screenshot 2025-01-22 070122](https://github.com/user-attachments/assets/53abfa03-143f-4bb3-b9a3-060265610154)
+
+![Screenshot 2025-01-22 070321](https://github.com/user-attachments/assets/2b5b74c0-8b33-41ea-a633-78512df7769f)
+
+3. Test Remote Desktop Access
+
+- Confirm that a normal, non-administrative domain user can now log in remotely to Client-1.
+  
+![Screenshot 2025-01-22 070505](https://github.com/user-attachments/assets/9eaf9319-1e54-4a5b-be4b-ef84956b3f10)
+
+
+Note: In a production environment, this configuration is typically managed via Group Policy for multiple systems simultaneously.
+
